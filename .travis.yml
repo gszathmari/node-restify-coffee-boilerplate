@@ -1,9 +1,9 @@
 language: node_js
 node_js:
-  - "0.12"
-  - "0.11"
-  - "0.10"
-  - "iojs"
+  - '0.12'
+  - '0.11'
+  - '0.10'
+  - iojs
 before_install:
   - npm install -g coffee-script coffeelint mocha mocha-lcov-reporter istanbul coveralls
 after_success:
@@ -11,7 +11,10 @@ after_success:
   - istanbul report lcov --dir coverage/
   - coveralls < coverage/lcov.info
   - rm -rf coverage/
-cache:
-  - npm
 env:
   - NODE_ENV=ci
+deploy:
+  provider: heroku
+  api_key:
+    secure: eY4XZw/ylLgqOz6qbL6P2GAV6AKUUzeTaixX+Bs1ctFqXjrq3MxhsXAzls9YkwZ+Epwh0ecac0GpJeE0vx6kLMgp4bvyEDL55GKuKpsrB5SZTkVECBDYnvKinnZSBXvv22p/qmoZTa9iFBxCndEpUJpOOmDhBGQ6eFP+h4Wh/LpVZH61jXpxbgdgyGRpgGNnfKkMnWjHmKGNVrwouCDA4Na0+YHEjIwlJWm6KM6J/NMySG+ZXEGNz6XpmQyWZ9MKwHl/mrPJGKQn5PjEzHBo+8itizcdCA9IFkWR/ooosLGNYVtemtj6FkBrOkcHci09VVveY1ltdPbFdEqQqiasRfoZVVKj4wL2N3Vrez19ATYUD8ldAGhdW3pcAKGA2VAWThjCzikuSnBhOFqZEqAs+8AJtBtGtBr+E6q19VTEnpYLHSbEKfHpYHIPPD5q6vBfPaDwUdIKJ+1Fo97U3vFk7aymGJUSp9Go+GGAIsfrvi1hjFefhHGwROgiRW91nj+bAvjtIen0k3m0BE0JSnZcxxgBEG8tCMXf/bmBpWrBkGl8R8WgE77ygJg7EdHKQDeVmrRIvtHRL8g2h0mRKvtoIF4WBm+aVEBC0rEtQAq54Mt5QxO+ZIUJlb2uux5pL/WEnpir2yL6F3J3qmCs7oxcCYiEE3IcdnruaGhWtXUerFo=
+  app: node-restify-coffee
