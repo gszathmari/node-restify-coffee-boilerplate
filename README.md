@@ -48,6 +48,24 @@ $ npm run build
 
 This will create an `app/` directory with the matching JavaScript files
 
+## Documentation
+
+### API Blueprint
+
+Blueprint is available on [Apiary](http://docs.noderestifycoffeeboilerplate.apiary.io/)
+
+The documentation is rendered from the `apiary.apib` file from this repository
+
+### Live API
+
+This boilerplate application is running on Heroku
+
+```sh
+$ curl http://node-restify-coffee.gaborszathmari.me
+
+{"message":"Hello World!"}
+```
+
 ## Contribute
 
 Pull requests are welcome
