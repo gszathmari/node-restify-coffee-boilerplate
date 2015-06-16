@@ -1,0 +1,45 @@
+{
+  "name": "node-restify-coffee-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for Restify APIs written in CoffeeScript",
+  "license": "MIT",
+  "keywords": [
+    "boilerplate",
+    "rest",
+    "api",
+    "coffeescript"
+  ],
+  "author": {
+    "name": "Gabor Szathmari",
+    "email": "gszathmari@gmail.com",
+    "homepage": "http://gaborszathmari.me"
+  },
+  "bugs": {
+    "url": "https://github.com/gszathmari/node-restify-coffee-boilerplate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gszathmari/node-restify-coffee-boilerplate.git"
+  },
+  "main": "./src/server.coffee",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "start": "coffee ./src/server.coffee",
+    "test": "coffeelint --color=auto ./src ./test && mocha --recursive --compilers coffee:coffee-script/register ./test",
+    "build": "coffee --bare --compile --output app/ src/"
+  },
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "js-yaml": "^3.3.1",
+    "restify": "^3.0.3",
+    "winston": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "coffee-coverage": "^0.6.0",
+    "sinon": "^1.15.3",
+    "supertest": "^1.0.1"
+  }
+}
