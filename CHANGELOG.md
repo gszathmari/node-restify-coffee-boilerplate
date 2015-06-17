@@ -1,3 +1,8 @@
+## v1.1.3 (2015-06-17)
+
+  - Adding links into the documentation pointing to the announcement
+  - Fixing minor typo in README.md
+
 ## v1.1.2 (2015-06-17)
 
   - Using res.json in controller (#5)
