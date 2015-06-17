@@ -26,7 +26,7 @@ exports.reflector = (req, res, next) ->
 
   # Send error back and stop processing the request if we have erros
   if validationErrorMsg.errors.length > 0
-    res.send 400, validationErrorMsg
+    res.json 400, validationErrorMsg
     return next false
 
   # Construct response and send it back if 'm' parameter was valid

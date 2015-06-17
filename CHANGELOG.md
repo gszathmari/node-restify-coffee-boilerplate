@@ -1,3 +1,7 @@
+## v1.1.2 (2015-06-17)
+
+  - Using res.json in controller (#5)
+
 ## v1.1.1 (2015-06-17)
 
   - Minor fixes in the documentation
