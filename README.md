@@ -1,6 +1,6 @@
 # Node Restify CoffeeScript Boilerplate
 
-This boilerplate is built on [Node.js](http://nodejs.org), [Restify](http://mcavage.me/node-restify), [CoffeeScript](http://coffeescript.org) for building APIs
+Boilerplate built on [Node.js](http://nodejs.org), [Restify](http://mcavage.me/node-restify), [CoffeeScript](http://coffeescript.org) for building APIs
 
 [![Build Status](https://travis-ci.org/gszathmari/node-restify-coffee-boilerplate.svg)](https://travis-ci.org/gszathmari/node-restify-coffee-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/gszathmari/node-restify-coffee-boilerplate/badge.svg)](https://coveralls.io/r/gszathmari/node-restify-coffee-boilerplate)
@@ -10,7 +10,7 @@ This boilerplate is built on [Node.js](http://nodejs.org), [Restify](http://mcav
 
 ### Prerequisites
 
-Install the following packages as the following:
+Install packages as the following:
 
 ```sh
 $ npm install -g coffee-script coffeelint mocha
@@ -83,7 +83,7 @@ This project was inspired by the following boilerplates:
 * [node-restify-boilerplate](https://github.com/dominiklessel/node-restify-boilerplate)
 * [express-coffee](https://github.com/twilson63/express-coffee)
 
-The project first featured on the [Rainbow and Unicorn](https://blog.gaborszathmari.me) blog
+The project was first featured on the [Rainbow and Unicorn](https://blog.gaborszathmari.me/2015/06/17/api-boilerplate-in-restify-and-coffeescript/) security blog
 
 ## License
 
