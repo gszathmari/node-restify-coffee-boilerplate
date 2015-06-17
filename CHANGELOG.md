@@ -1,3 +1,8 @@
+## v1.1.1 (2015-06-17)
+
+  - Minor fixes in the documentation
+  - Testing for the CORS headers in the end-to-end test
+
 ## v1.1.0 (2015-06-17)
 
   - Fixing link in CREDITS.md file (#2)

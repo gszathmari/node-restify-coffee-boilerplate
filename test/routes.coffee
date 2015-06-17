@@ -19,6 +19,8 @@ describe 'Route: HEAD [/]', ->
 describe 'Route: GET [/]', ->
   it 'should return HTTP 200', (done) ->
     api.get '/'
+      .set 'Origin', 'example.com'
+      .expect 'Access-Control-Allow-Origin', 'example.com'
       .expect 'Content-Type', /json/
       .expect 200, done
 
@@ -28,6 +30,8 @@ describe 'Route: POST [/]', ->
     message = "I am a teapot"
     api.post '/'
       .query {m: message}
+      .set 'Origin', 'example.com'
+      .expect 'Access-Control-Allow-Origin', 'example.com'
       .expect 200
       .end (err, res) ->
         return done err if err
@@ -39,6 +43,8 @@ describe 'Route: POST [/]', ->
     message = "x"
     api.post '/'
       .query {m: message}
+      .set 'Origin', 'example.com'
+      .expect 'Access-Control-Allow-Origin', 'example.com'
       .expect 400
       .end (err, res) ->
         return done err if err
