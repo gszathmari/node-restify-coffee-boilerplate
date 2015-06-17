@@ -70,9 +70,11 @@ $ curl http://node-restify-coffee.gaborszathmari.me
 
 Pull requests are welcome
 
+Check [CONTRIBUTE.md](CONTRIBUTE.md) for more details
+
 ### Contributors
 
-- [Gabor Szathmari](http://gaborszathmari.me) <> [@gszathmari](https://www.twitter.com/gszathmari)
+- [Gabor Szathmari](http://gaborszathmari.me) - [@gszathmari](https://twitter.com/gszathmari)
 
 ## Credits
 
