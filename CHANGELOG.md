@@ -2,6 +2,7 @@
 
   - Minor fixes in the documentation
   - Testing for the CORS headers in the end-to-end test
+  - Adding missing unit test file
 
 ## v1.1.0 (2015-06-17)
 
