@@ -1,6 +1,8 @@
 ## v1.1.0 (2015-06-17)
 
   - Fixing link in CREDITS.md file (#2)
+  - Adding POST [/] endpoint to demonstrate input validation
+  - Adding CONTRIBUTE.md
 
 ## v1.0.1 (2015-06-17)
 
