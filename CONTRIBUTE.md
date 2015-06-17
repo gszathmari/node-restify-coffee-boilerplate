@@ -34,8 +34,8 @@ This section includes ways to get started.
 * You can look through the existing bugs on [Github](https://github.com/gszathmari/node-restify-coffee-boilerplate/issues) too
 
 * Look at existing bugs and help us understand if
-** The bug is reproducible?
-** What are the steps to reproduce?
+ - The bug is reproducible?
+ - What are the steps to reproduce?
 
 # Documentation
 
