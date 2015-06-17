@@ -79,7 +79,7 @@ Pull requests are welcome
 This project was inspired by the following boilerplates:
 
 * [node-restify-boilerplate](https://github.com/dominiklessel/node-restify-boilerplate)
-* [express-coffee](https://github.com/twilson63/express-coffee|express-coffee)
+* [express-coffee](https://github.com/twilson63/express-coffee)
 
 The project first featured on the [Rainbow and Unicorn](https://blog.gaborszathmari.me) blog
 

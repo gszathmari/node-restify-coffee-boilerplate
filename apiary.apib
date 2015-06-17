@@ -6,12 +6,47 @@ Boilerplate for APIs using Restify and CoffeeScript
 
 Source code is available on [GitHub](https://github.com/gszathmari/node-restify-coffee-boilerplate)
 
-# API Root [/]
+# Group Message Resource
+
+## Message [/{?m}]
+
+This resource serves pre-built or user submitted messages
+
+### Retrieve Message [GET]
 
 This resource prints the standard "Hello Word!" message in a JSON format
 
-## Retrieve "Hello World!" [GET]
++ Response 200 (application/json)
+
+        {"message": "Hello World!"}
+
+
+### Reflect Message [POST]
+
+This resource replies messages back sent in the POST parameter
+
+In order to demonstrate input validation features of the boilerplate, it will reject messages are too short, too long or has an invalid format. It demonstrates the input validation helper of the boilerplate.
+
++ Parameters
+    + m: `I am a teapot` (string) - Message to be replied back
 
 + Response 200 (application/json)
 
-        {"message":"Hello World!"}
+        {"message": "I am a teapot"}
+        
+# Group Errors
+
+## Input Validation Errors
+
+If an invalid user input is supplied, the error message defines the following details:
+
+    {
+        "code": "ValidationError",
+        "message": "There was a problem with one of the submitted parameters",
+        "errors": [
+            {
+                "field": "m",
+                "message": "Parameter must be between 3 and 250 characters"
+            }
+        ]
+    }

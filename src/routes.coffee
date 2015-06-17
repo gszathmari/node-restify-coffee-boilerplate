@@ -21,5 +21,8 @@ app.head '/.*', (req, res, next) ->
   res.send(204)
   next(false)
 
-# Route: '/'
+# Route: GET [/]
 app.get '/', main.index
+
+# Route: POST [/]
+app.post '/', main.reflector
