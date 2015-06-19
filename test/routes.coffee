@@ -4,7 +4,7 @@ chai = require 'chai'
 config = require '../src/helpers/config'
 app = require '../src/server'
 
-port = process.env.PORT or config.general.server.port
+port = process.env.PORT or 5000
 api = supertest 'http://localhost:' + port
 
 chai.should()

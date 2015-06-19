@@ -1,7 +1,5 @@
 ---
 general:
-  server:
-    port: 5000
   CORS:
     allowed_origins:
       - "*"
