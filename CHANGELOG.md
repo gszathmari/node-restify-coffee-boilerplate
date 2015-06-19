@@ -1,3 +1,7 @@
+## v1.2 ()
+
+  - Improved logic for handling HEAD requests
+
 ## v1.1.3 (2015-06-17)
 
   - Adding links into the documentation pointing to the announcement

@@ -11,9 +11,9 @@ chai.should()
 
 # Test HTTP HEAD route
 describe 'Route: HEAD [/]', ->
-  it 'should return HTTP 204', (done) ->
+  it 'should return HTTP 200', (done) ->
     api.head '/'
-      .expect 204, done
+      .expect 200, done
 
 # Test GET [/] route
 describe 'Route: GET [/]', ->
