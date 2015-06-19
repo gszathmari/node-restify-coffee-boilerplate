@@ -22,6 +22,12 @@ The global configuration file is located in `./config/global.yaml`
 
 The defaults should be sufficient in any developer environment, however you may want to change the parameters in production environments.
 
+#### Environmental Variables
+
+The current variables are also for configuration besides the global configuration file
+
+* `PORT` (optional): TCP port where the API will listen *(default: 5000)*
+
 ### Running
 
 The API can be started with the following:
@@ -46,7 +52,7 @@ The boilerplate can be compiled into pure JavaScript with the following command:
 $ npm run build
 ```
 
-This will create an `app/` directory with the matching JavaScript files
+This will compile CoffeeScript to JavaScript into the `lib/` directory
 
 ## Documentation
 

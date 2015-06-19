@@ -15,11 +15,11 @@ corsOptions =
 
 app.use restify.CORS corsOptions
 app.use addHeaders
+# Workaround for cURL
+app.pre restify.pre.userAgentConnection()
 
-# Handle HEAD requests
-app.head '/.*', (req, res, next) ->
-  res.send(204)
-  next(false)
+# Route: HEAD [/]
+app.head '/', main.index
 
 # Route: GET [/]
 app.get '/', main.index

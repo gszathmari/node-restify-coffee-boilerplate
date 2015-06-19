@@ -7,8 +7,9 @@ validate = require '../helpers/validate'
 
 # Route: GET [/]
 exports.index = (req, res, next) ->
-  myMessage = "Hello World!"
-  res.json Message.retrieve myMessage
+  myMessage =
+    message: "Hello World!"
+  res.json myMessage
   return next()
 
 # Route: POST [/]
@@ -29,6 +30,14 @@ exports.reflector = (req, res, next) ->
     res.json 400, validationErrorMsg
     return next false
 
-  # Construct response and send it back if 'm' parameter was valid
-  res.json Message.retrieve req.params.m
-  return next()
+  # We consider user submitted 'm' parameter as "clean" from here
+
+  # Construct response and return it back to the client
+  Message.retrieve req.params.m, (err, myMessage) ->
+    # Model can also generate errors
+    if err
+      return next err
+    # Return response
+    else
+      res.json myMessage
+      return next()

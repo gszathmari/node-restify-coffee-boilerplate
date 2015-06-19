@@ -22,7 +22,7 @@ app.use restify.bodyParser()
 app.use restify.queryParser()
 
 # Launching server
-server = app.listen process.env.PORT or config.general.server.port, ->
+server = app.listen process.env.PORT or 5000, ->
   address = server.address().address
   port = server.address().port
   logger.info \

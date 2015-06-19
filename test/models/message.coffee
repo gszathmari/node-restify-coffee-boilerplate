@@ -5,10 +5,11 @@ Message = require '../../src/models/message'
 expect = chai.expect
 
 describe 'Model: Message', ->
-  myMessage = "I am a teapot!"
+  m = "I am a teapot!"
 
   it 'should return our message in JSON', ->
-    result = Message.retrieve myMessage
-    expect(result).to.have.property('message')
-    expect(result.message).to.be.a('string')
-    expect(result.message).to.be.equal(myMessage)
+    Message.retrieve m, (err, myMessage) ->
+      expect(err).to.be.null
+      expect(myMessage).to.have.property('message')
+      expect(myMessage.message).to.be.a('string')
+      expect(myMessage.message).to.be.equal(m)

@@ -4,15 +4,16 @@
 
 # This dummy model will construct a response in JSON format from
 # a user submitted string
+
 class Message
   constructor: ->
-  
-  retrieve: (m) ->
+
+  retrieve: (m, callback) ->
+    err = null
+    # Construct reply object
     response =
       message: m
-    return response
+    # Send result back through the callback
+    callback err, response
 
-# Create object and export it as a dummy model
-message = new Message
-
-module.exports = message
+module.exports = new Message

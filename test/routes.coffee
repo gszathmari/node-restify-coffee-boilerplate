@@ -4,16 +4,16 @@ chai = require 'chai'
 config = require '../src/helpers/config'
 app = require '../src/server'
 
-port = process.env.PORT or config.general.server.port
+port = process.env.PORT or 5000
 api = supertest 'http://localhost:' + port
 
 chai.should()
 
 # Test HTTP HEAD route
 describe 'Route: HEAD [/]', ->
-  it 'should return HTTP 204', (done) ->
+  it 'should return HTTP 200', (done) ->
     api.head '/'
-      .expect 204, done
+      .expect 200, done
 
 # Test GET [/] route
 describe 'Route: GET [/]', ->

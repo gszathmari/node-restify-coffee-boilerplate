@@ -1,3 +1,10 @@
+## v1.2.0 (2015-06-19)
+
+  - Improved logic for handling HEAD requests
+  - Use '/lib' directory for compiled JS instead of '/app'
+  - Simplify TCP port configuration
+  - Improve and simplify Message model
+
 ## v1.1.3 (2015-06-17)
 
   - Adding links into the documentation pointing to the announcement
