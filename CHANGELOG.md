@@ -2,6 +2,7 @@
 
   - Improved logic for handling HEAD requests
   - Use '/lib' directory for compiled JS instead of '/app'
+  - Simplify TCP port configuration
 
 ## v1.1.3 (2015-06-17)
 
