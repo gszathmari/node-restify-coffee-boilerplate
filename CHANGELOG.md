@@ -1,4 +1,4 @@
-## v1.2 ()
+## v1.2.0 (2015-06-19)
 
   - Improved logic for handling HEAD requests
   - Use '/lib' directory for compiled JS instead of '/app'
