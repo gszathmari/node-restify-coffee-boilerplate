@@ -1,6 +1,7 @@
 ## v1.2 ()
 
   - Improved logic for handling HEAD requests
+  - Use '/lib' directory for compiled JS instead of '/app'
 
 ## v1.1.3 (2015-06-17)
 

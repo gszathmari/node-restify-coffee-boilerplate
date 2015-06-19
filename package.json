@@ -28,7 +28,7 @@
   "scripts": {
     "start": "coffee ./src/server.coffee",
     "test": "coffeelint --color=auto ./src ./test && mocha --recursive --compilers coffee:coffee-script/register ./test",
-    "build": "coffee --bare --compile --output app/ src/"
+    "build": "coffee --bare --compile --output lib/ src/"
   },
   "dependencies": {
     "chalk": "^1.0.0",

@@ -46,7 +46,7 @@ The boilerplate can be compiled into pure JavaScript with the following command:
 $ npm run build
 ```
 
-This will create an `app/` directory with the matching JavaScript files
+This will compile CoffeeScript to JavaScript into the `lib/` directory
 
 ## Documentation
 
