@@ -4,6 +4,7 @@
   - Correcting .gitignore to ignore compiled JS files
   - Fixing typo in exception handler
   - Fixing version number in package.json
+  - Adding bit more explanation to controllers about exposing error messages
 
 ## v1.2.0 (2015-06-19)
 
