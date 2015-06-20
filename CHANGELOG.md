@@ -1,5 +1,6 @@
 ## v1.2.1 (2015-06-23)
 
+  - Fixing typo in exception handler
   - Fixing version number in package.json
 
 ## v1.2.0 (2015-06-19)
