@@ -14,7 +14,7 @@ describe 'Helper: exceptionhandler', ->
   # Message from exceptionHandler
   jsonResponse =
     message: "InternalServerError"
-    desription: "Ouch! Internal server error, please try again"
+    description: "Ouch! Internal server error, please try again"
 
   it 'should return generic error message', ->
     try
