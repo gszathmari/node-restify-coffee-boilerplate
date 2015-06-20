@@ -1,6 +1,6 @@
 {
   "name": "node-restify-coffee-boilerplate",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "Boilerplate for Restify APIs written in CoffeeScript",
   "license": "MIT",
   "keywords": [
