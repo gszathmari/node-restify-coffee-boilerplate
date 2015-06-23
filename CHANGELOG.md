@@ -1,3 +1,11 @@
+## v1.2.1 (2015-06-23)
+
+  - Cleaning up routes by moving modules into server file
+  - Correcting .gitignore to ignore compiled JS files
+  - Fixing typo in exception handler
+  - Fixing version number in package.json
+  - Adding bit more explanation to controllers about exposing error messages
+
 ## v1.2.0 (2015-06-19)
 
   - Improved logic for handling HEAD requests

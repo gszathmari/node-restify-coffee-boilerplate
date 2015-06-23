@@ -34,7 +34,7 @@ exports.reflector = (req, res, next) ->
 
   # Construct response and return it back to the client
   Message.retrieve req.params.m, (err, myMessage) ->
-    # Model can also generate errors
+    # Model can also generate errors, this will bubble up the error message
     if err
       return next err
     # Return response
